@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5006/api";
+const API_URL = "https://carhub-3-3c5y.onrender.com";
 
 // Authentication
 export const login = async(email, password) => {
