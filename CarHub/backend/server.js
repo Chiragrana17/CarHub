@@ -19,7 +19,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve s
 
 // MongoDB Connection
 mongoose
-    .connect(mongodb+srv://chirag:chirag@cluster0.ejue6.mongodb.net/, {
+    .connect('mongodb+srv://chirag:chirag@cluster0.ejue6.mongodb.net/', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
