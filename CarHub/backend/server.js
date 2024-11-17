@@ -19,7 +19,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve s
 
 // MongoDB Connection
 mongoose
-    .connect(process.env.MONGO_URI, {
+    .connect(mongodb+srv://chirag:chirag@cluster0.ejue6.mongodb.net/, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
@@ -31,5 +31,5 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 
 // Start the server
-const PORT = process.env.PORT || 5006;
+const PORT = https://carhub-3-3c5y.onrender.com;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
