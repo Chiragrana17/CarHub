@@ -31,5 +31,5 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 
 // Start the server
-const PORT = https://carhub-3-3c5y.onrender.com;
+const PORT = process.env.PORT || 5006;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
